@@ -3,7 +3,7 @@
 //Lista de Metodos e Funções 
 
 //1
-
+/*
 void ApresentaçãoInicial()
 {
     Console.WriteLine("==== PROGRAMAÇÃO NO CONSOLE ====");
@@ -77,3 +77,54 @@ int pontos = CalcularPontos(vida, moedas);
 MostrarFicha(nome, classe, vida, energia, forca, moedas, pontos);
 
 //4
+Console.WriteLine("Digite o valor do seu ataque.");
+int ataque = int.Parse(Console.ReadLine());
+Console.WriteLine("Digite o valor da sua defesa.");
+int defesa = int.Parse(Console.ReadLine());
+Console.WriteLine("Digite o valor do seu ataque bonus.");
+int bonus = int.Parse(Console.ReadLine());
+
+int CalcularDano(int ataque,int defesa,int bonus)
+{
+    int dano = ataque - defesa + bonus;
+
+    if (dano < 0)
+    {
+        dano = 0;
+    }
+
+    return dano;
+}
+
+int dano = CalcularDano(ataque, defesa, bonus);
+
+Console.WriteLine("Dano final: " + dano);
+
+
+
+//5
+
+Console.WriteLine("Digite sua vida atual.");
+int vidaAtual = int.Parse(Console.ReadLine());
+Console.WriteLine("Digite a quantidade de cura que você recebeu.");
+int cura = int.Parse(Console.ReadLine());
+Console.WriteLine("Digite o valor da sua vida máxima.");
+int vidaMax = int.Parse(Console.ReadLine());
+
+int CalcularVida (int vidaAtual, int cura, int vidaMax)
+{
+    vidaMax = vidaAtual + cura;
+
+    if (vidaMax > vidaMax)
+    {
+        vidaMax = vidaMax;
+    }
+
+    return vidaMax;
+}
+
+vidaMax = CalcularVida(vidaAtual, cura, vidaMax);
+
+Console.WriteLine("Vida final: " + vidaMax);
+*/
+//6
